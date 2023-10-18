@@ -16,26 +16,25 @@
   <body>
     <div class="container">
       <nav class="nav-bar">
-        <div class="logo">
-          <!-- TODO: Add an the logo image here -->
-          <!-- <img src="" alt=""> -->
-          <h2>Ejada</h2>
-          <span>Customer Assistant</span>
+        <div class="search-area">
+          <div class="logo">
+            <!-- TODO: Add an the logo image here -->
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+          <div class="search-bar-container">
+            <i data-feather="search" class="icon"></i>
+            <input
+              type="search"
+              class="search-bar"
+              placeholder="Search or type"
+            />
+          </div>
         </div>
-        <div class="search-bar-container">
-          <i data-feather="search" class="icon"></i>
-          <input
-            type="search"
-            class="search-bar"
-            placeholder="Search or type"
-          />
-        </div>
-        <div class="configurations">
+        <div class="user-area">
           <div class="language">
             <span class="fi fi-gb flag"></span>
             <span class="lang">English</span>
           </div>
-          <span class="line"></span>
           <div class="info">
             <div class="icon-container">
               <i data-feather="sun" class="icon"></i>
@@ -47,7 +46,6 @@
               <i data-feather="bell" class="icon"></i>
             </div>
           </div>
-          <span class="line"></span>
           <div class="profile">
             <div class="profile-info">
               <span class="greetings">Welcome back</span>
@@ -60,30 +58,152 @@
           </div>
         </div>
       </nav>
-      <main>main</main>
+      <main>
+        <div class="tabs">
+          <ul class="tabs-list">
+            <li class="tabs-item"><a href="#" class="tabs-link">Scripts</a></li>
+            <li class="tabs-item active">
+              <a href="#" class="tabs-link">Summary</a>
+            </li>
+            <li class="tabs-item">
+              <a href="#" class="tabs-link">Total Calls</a>
+            </li>
+            <li class="tabs-item">
+              <a href="#" class="tabs-link">Wait Times</a>
+            </li>
+            <li class="tabs-item">
+              <a href="#" class="tabs-link">Insights</a>
+            </li>
+            <li class="tabs-item"><a href="#" class="tabs-link">Trends</a></li>
+          </ul>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Total Call Volume</span>
+              <br />
+              <span class="data">263.9K</span>
+              <br />
+              <span class="goal">Call Per Agent (Goal) : 201.51K</span>
+            </div>
+            <div class="visuals"></div>
+          </div>
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Answer Rate</span>
+              <br />
+              <span class="data">88.2%</span>
+              <br />
+              <span class="goal">Goal: 85.0%</span>
+            </div>
+            <div class="visuals"></div>
+          </div>
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Queue Rate</span>
+              <br />
+              <span class="data">65.5%</span>
+              <br />
+              <span class="goal">Goal: 70.0%</span>
+              <div class="visuals"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Abandon Rate</span>
+              <br />
+              <span class="data">10.3%</span>
+              <br />
+              <span class="goal">Goal: 15.0%</span>
+              <div class="visuals"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Time to Answer</span>
+              <br />
+              <span class="data">00:00:52</span>
+              <br />
+              <span class="goal">Goal: 00:01:00</span>
+              <div class="visuals"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="data-container">
+              <span class="data-type">Handling Time</span>
+              <br />
+              <span class="data">00:00:27</span>
+              <br />
+              <span class="goal">Goal: 00:03:00</span>
+              <div class="visuals"></div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-container">
+          <div class="filter">
+            <span class="filter-type">Year / Month: </span>
+            <select class="filter-select">
+              <option value="All">All</option>
+            </select>
+          </div>
+          <div class="filter">
+            <span class="filter-type">Type: </span>
+            <select class="filter-select">
+              <option value="All">Type</option>
+            </select>
+          </div>
+        </div>
+        <div class="statistics">
+          <div id="kpi" class="stats-card">
+            <div class="card-head">
+              <span class="title">KPIs</span>
+            </div>
+          </div>
+          <div id="user-satisfaction" class="stats-card">
+            <div class="card-head">
+              <span class="title">User Satisfaction</span>
+            </div>
+          </div>
+          <div id="wait-times" class="stats-card">
+            <div class="card-head">
+              <span class="title">Wait Times</span>
+            </div>
+          </div>
+          <div id="message-analysis" class="stats-card">
+            <div class="card-head">
+              <span class="title">Message Analysis</span>
+            </div>
+          </div>
+          <div id="trends" class="stats-card">
+            <div class="card-head">
+              <span class="title">Trends</span>
+            </div>
+          </div>
+        </div>
+      </main>
       <div class="side-bar" id="sidebar">
         <ul class="side-list">
           <li class="side-item">
             <a href="#" class="side-link">
-              <i data-feather="grid" class="icon"></i>
+              <img src="./icons/dashboard icon.svg" alt="" />
               <span>Dashboard</span>
             </a>
           </li>
           <li class="side-item">
             <a href="#" class="side-link">
-              <i data-feather="sliders" class="icon"></i>
+              <img src="icons/Line.svg" alt="" />
               <span>Control Center</span>
             </a>
           </li>
           <li class="side-item">
             <a href="#" class="side-link">
-              <i data-feather="pie-chart" class="icon"></i>
+              <img src="icons/ChartPieSlice.svg" alt="" />
               <span>Statistics</span>
             </a>
           </li>
           <li class="side-item">
             <a href="#" class="side-link">
-              <i data-feather="users" class="icon"></i>
+              <img src="icons/UsersThree.svg" alt="" />
               <span>Customer Data</span>
             </a>
           </li>
