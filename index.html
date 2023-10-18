@@ -2,12 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Ejada - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
-    
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <!-- TODO: Add an the logo image here -->
+          <!-- <img src="" alt=""> -->
+          <h2>Ejada</h2>
+          <span>Customer Assistant</span>
+        </div>
+        <div class="search-bar-container">
+          <i data-feather="search" class="icon"></i>
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Search or type"
+          />
+        </div>
+        <div class="configurations">
+          <div class="language">
+            <span class="fi fi-gb flag"></span>
+            <span class="lang">English</span>
+          </div>
+          <span class="line"></span>
+          <div class="info">
+            <div class="icon-container">
+              <i data-feather="sun" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="rotate-ccw" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="bell" class="icon"></i>
+            </div>
+          </div>
+          <span class="line"></span>
+          <div class="profile">
+            <div class="profile-info">
+              <span class="greetings">Welcome back</span>
+              <br />
+              <span class="username">Muhammed Nayef</span>
+            </div>
+            <div class="profile-picture">
+              <h2 class="icon">M</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>main</main>
+      <div class="side-bar" id="sidebar">
+        <ul class="side-list">
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <i data-feather="grid" class="icon"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <i data-feather="sliders" class="icon"></i>
+              <span>Control Center</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <i data-feather="pie-chart" class="icon"></i>
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <i data-feather="users" class="icon"></i>
+              <span>Customer Data</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
