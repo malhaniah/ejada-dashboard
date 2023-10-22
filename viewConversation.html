@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Center / Ahmed Mohammed</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/control-center.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-bar" id="sidebar">
+        <ul class="side-list">
+          <li class="side-item">
+            <a href="./" class="side-link">
+              <img src="./icons/dashboard icon.svg" alt="" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="./contorlCenter.html" class="side-link">
+              <img src="icons/Line.svg" alt="" />
+              <span>Control Center</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <img src="icons/ChartPieSlice.svg" alt="" />
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <img src="icons/UsersThree.svg" alt="" />
+              <span>Customer Data</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav-bar">
+        <div class="search-area">
+          <div class="logo">
+            <!-- TODO: Add an the logo image here -->
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+          <div class="search-bar-container">
+            <i data-feather="search" class="icon"></i>
+            <input
+              type="search"
+              class="search-bar"
+              placeholder="Search or type"
+            />
+          </div>
+        </div>
+        <div class="user-area">
+          <div class="language">
+            <span class="fi fi-gb flag"></span>
+            <span class="lang">English</span>
+          </div>
+          <div class="info">
+            <div class="icon-container">
+              <i data-feather="sun" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="rotate-ccw" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="bell" class="icon"></i>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="profile-info">
+              <span class="greetings">Welcome back</span>
+              <br />
+              <span class="username">Muhammed Nayef</span>
+            </div>
+            <div class="profile-picture">
+              <h2 class="icon">M</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1 class="heading">
+          Control Center
+          <span class="path">/ View Conversation (Ahmed Mohammed)</span>
+        </h1>
+        <div class="conversations">
+          <div class="conversation-container">
+            <div class="conversation-head">
+              <h5 class="conversation-name">Ahmed Mohammed</h5>
+            </div>
+            <div class="conversation-box">
+              <div class="dialog">
+                <div class="ejada">
+                  <span class="dialog-logo"
+                    ><img src="./icons/logo-mini.svg"
+                  /></span>
+                  <span class="text">
+                    Card to know information about how to apply.
+                  </span>
+                </div>
+                <div class="ejada">
+                  <span class="text">Did that help?</span>
+                </div>
+                <div class="customer green">
+                  <span class="text">Yes, Thank you.</span>
+                </div>
+                <div class="ejada"><span class="text">Glad to help.</span></div>
+              </div>
+              <div class="conversation-message">
+                <input
+                  type="text"
+                  class="conversation-input"
+                  placeholder="Type your message..."
+                />
+                <button class="conversation-send-btn">Send</button>
+              </div>
+            </div>
+            <div class="conversation-options">
+              <a href="./">Transfer chat selected department</a>
+              <select>
+                <option value="central-operation">Central Operation</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

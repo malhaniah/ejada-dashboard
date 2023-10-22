@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="search-area">
+          <div class="logo">
+            <!-- TODO: Add an the logo image here -->
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+          <div class="search-bar-container">
+            <i data-feather="search" class="icon"></i>
+            <input
+              type="search"
+              class="search-bar"
+              placeholder="Search or type"
+            />
+          </div>
+        </div>
+        <div class="user-area">
+          <div class="language">
+            <span class="fi fi-gb flag"></span>
+            <span class="lang">English</span>
+          </div>
+          <div class="info">
+            <div class="icon-container">
+              <i data-feather="sun" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="rotate-ccw" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="bell" class="icon"></i>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="profile-info">
+              <span class="greetings">Welcome back</span>
+              <br />
+              <span class="username">Muhammed Nayef</span>
+            </div>
+            <div class="profile-picture">
+              <h2 class="icon">M</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main></main>
+      <div class="side-bar" id="sidebar">
+        <ul class="side-list">
+          <li class="side-item">
+            <a href="./" class="side-link">
+              <img src="./icons/dashboard icon.svg" alt="" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="./contorlCenter.html" class="side-link">
+              <img src="icons/Line.svg" alt="" />
+              <span>Control Center</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <img src="icons/ChartPieSlice.svg" alt="" />
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <img src="icons/UsersThree.svg" alt="" />
+              <span>Customer Data</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
