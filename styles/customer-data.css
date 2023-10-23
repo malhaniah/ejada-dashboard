@@ -1,0 +1,138 @@
+.table-container {
+  width: 100%;  
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 25px;
+  padding: 25px;
+}
+
+.table-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-show-select-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.data-show-select-container span {
+  color: var(--text-color);
+}
+
+.data-show-select-container select {
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid var(--borders-color);
+  color: var(--accent-color);
+  border-radius: 7px;
+}
+
+.data-search-bar-container {
+  border: 1px solid var(--borders-color);
+  padding: 5px 5px 5px 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.data-search-bar-container input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+}
+
+table.data-table{
+  width: 100%;
+  white-space: nowrap;
+  border-radius: 10px;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid var(--borders-color);
+  overflow: hidden;
+}
+
+table.data-table tbody {
+  border: 2px solid var(--borders-color);
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+th {
+  text-align: left;
+  padding-left: 25px;
+  color: var(--customer-dialog-blue-text-color);
+}
+
+tr.headers {
+  height: 100px;
+  background-color: var(--light-accent-color);
+  border-bottom: 1px solid var(--borders-color);
+}
+
+.filters input {
+  border: 1px solid var(--borders-color);
+  padding: 5px 5px 5px 10px;
+  width: 85%;
+  height: 35px;
+  margin: 25px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+tr.filters {
+  border-bottom: 1px solid var(--borders-color);
+}
+
+tr.data {
+  border-bottom: 1px solid var(--borders-color);
+}
+
+tr.data td {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+tr.data td:nth-child(4) {
+  text-align: center;
+}
+
+.data-sentiment .data {
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.data-sentiment .data.blue {
+  color: var(--customer-dialog-blue-text-color);
+  background-color: var(--customer-dialog-blue-background-color);
+}
+
+.data-sentiment .data.red {
+  color: var(--customer-dialog-red-text-color);
+  background-color: var(--customer-dialog-red-background-color);
+}
+
+.data-sentiment .data.green {
+  color: var(--customer-dialog-green-text-color);
+  background-color: var(--customer-dialog-green-background-color);
+}

@@ -1,11 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer data</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles//customer-data.css" />
+    <link rel="stylesheet" href="./styles/control-center.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="search-area">
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+          <div class="search-bar-container">
+            <i data-feather="search" class="icon"></i>
+            <input
+              type="search"
+              class="search-bar"
+              placeholder="Search or type"
+            />
+          </div>
+        </div>
+        <div class="user-area">
+          <div class="language">
+            <span class="fi fi-gb flag"></span>
+            <span class="lang">English</span>
+          </div>
+          <div class="info">
+            <div class="icon-container">
+              <i data-feather="sun" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="rotate-ccw" class="icon"></i>
+            </div>
+            <div class="icon-container">
+              <i data-feather="bell" class="icon"></i>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="profile-info">
+              <span class="greetings">Welcome back</span>
+              <br />
+              <span class="username">Muhammed Nayef</span>
+            </div>
+            <div class="profile-picture">
+              <h2 class="icon">M</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1 class="heading">Customer Data</h1>
+        <div class="table-container">
+          <div class="table-head">
+            <div class="data-show-select-container">
+              <span>Show</span>
+              <select>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+              </select>
+              <span>entries</span>
+            </div>
+            <div class="data-search-bar-container">
+              <i data-feather="search"></i>
+              <input type="text" placeholder="Search name, email, or etc." />
+            </div>
+          </div>
+          <table class="data-table sortable">
+            <tbody>
+              <tr class="headers">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Last Three Topics</th>
+                <th>Last Conversation Sentiment</th>
+              </tr>
+              <tr class="filters">
+                <td><input type="text" placeholder="Search by Name" /></td>
+                <td><input type="text" placeholder="Search by Email" /></td>
+                <td><input type="text" placeholder="Search by Topics" /></td>
+                <td><input type="text" placeholder="Search by Sentiment" /></td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment blue">
+                  <span class="data blue">Neutral</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data red">Negative</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data red">Negative</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data green">Positive</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment blue">
+                  <span class="data blue">Neutral</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data green">Positive</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data green">Positive</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment blue">
+                  <span class="data blue">Neutral</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data red">Negative</span>
+                </td>
+              </tr>
+              <tr class="data">
+                <td class="data-name">Albert Flores</td>
+                <td class="data-email">flores@mail.com</td>
+                <td class="data-topics">
+                  Investment financing, credit card reporting
+                </td>
+                <td class="data-sentiment">
+                  <span class="data green">Positive</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination-container">
+            <div class="result"></div>
+            <div class="pagination"></div>
+          </div>
+        </div>
+      </main>
+      <div class="side-bar" id="sidebar">
+        <ul class="side-list">
+          <li class="side-item">
+            <a href="./" class="side-link">
+              <img src="./icons/dashboard icon.svg" alt="" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="./contorlCenter.html" class="side-link">
+              <img src="icons/Line.svg" alt="" />
+              <span>Control Center</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#" class="side-link">
+              <img src="icons/ChartPieSlice.svg" alt="" />
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="./customerData.html" class="side-link">
+              <img src="icons/UsersThree.svg" alt="" />
+              <span>Customer Data</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>

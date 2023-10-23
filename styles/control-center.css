@@ -185,6 +185,7 @@
 .conversations {
   width: 100%;
   position: relative;
+  justify-content: space-evenly;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas: "conversation conversation-analysis";
@@ -308,7 +309,7 @@
 .conversation-analysis {
   width: 400px;
   padding: 10px 25px;
-  height: 697px;
+  height: 100%;
   background-color: var(--main-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   grid-area: conversation-analysis;
@@ -425,6 +426,45 @@
   line-height: normal;
 }
 
-.detected-topics-btn:hover{
+.detected-topics-btn:hover {
   background-color: var(--customer-dialog-blue-background-color);
+}
+
+.star-container {
+  width: 100%;
+}
+
+.rating {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--borders-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rating .icon {
+  color: var(--borders-color);
+}
+
+.rating .icon.active {
+  fill: gold;
+  color: gold;
+}
+
+@media only screen and (max-width: 1620px) {
+  .conversations {
+    gap: 25px;
+  }
+
+  .conversation-container {
+    width: 750px;
+  }
+
+  .chat-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+  }
 }
