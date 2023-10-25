@@ -11,10 +11,17 @@
 
 .statistics-insights-container {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
   justify-content: center;
   gap: 20px;
   padding-top: 20px;
+  grid-template-areas:
+    "kpi success-rate"
+    "avgNumber avgNumber"
+    "intent rate-intent"
+    "sentiment sentiment-rate";
 }
 .statistics-container h4 {
   color: var(--accent-text-color);
@@ -22,7 +29,7 @@
 }
 
 .statistics-insights-container .card {
-  width: 500px;
+  width: 100%;
   height: 400px;
   display: block;
   /* background-color: blue; */
@@ -38,8 +45,8 @@
 }
 
 .statistics-insights-container .average-conversation-card {
-  grid-column: 1 / span 2;
-  width: 1020px;
+  /*! grid-column: 1 / span 2; */
+  width: 100%;
 }
 
 .statistics-chart-nav {
@@ -52,4 +59,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.kpi-card {
+  grid-area: kpi;
+}
+
+.success-rate-card {
+  grid-area: success-rate;
+}
+
+.average-conversation-card {
+  grid-area: avgNumber;
+}
+
+.intent-card {
+  grid-area: intent;
+}
+
+.success-rate-intent-card {
+  grid-area: rate-intent;
+}
+
+.sentiment-card {
+  grid-area: sentiment;
+}
+
+.sentiment-rate-intent-card {
+  grid-area: sentiment-rate;
 }

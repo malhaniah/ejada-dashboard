@@ -174,7 +174,7 @@ body {
 .side-bar {
   display: flex;
   width: 270px;
-  height: 1404px;
+  height: 100%;
   padding: 30px 24px;
   align-items: flex-start;
   gap: 10px;
