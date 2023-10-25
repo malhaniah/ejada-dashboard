@@ -68,3 +68,12 @@ feedbacks.forEach((feedback, index) => {
     feedbackArrow[index].classList.add(activeClass);
   });
 });
+
+// Play conversation button
+const playOptions = document.querySelectorAll(".play-options");
+
+playOptions.forEach((playButton) => {
+  playButton.addEventListener("click", (e) => {
+    playButton.classList.toggle(activeClass);
+  });
+});
