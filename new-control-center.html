@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link rel="stylesheet" href="./styles/control-center.css" /> -->
+    <link rel="stylesheet" href="./styles/new-control-center.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link
       rel="stylesheet"
@@ -57,7 +59,59 @@
           </div>
         </div>
       </nav>
-      <main></main>
+      <main>
+        <h1 class="heading">
+          Control Center
+          <span class="path">/ View Conversation (Ahmed Mohammed)</span>
+        </h1>
+        <div class="conversations">
+          <div class="conversation-container">
+            <div class="conversation-head">
+              <h5 class="conversation-title">
+                Conversation id:
+                <span class="conversation-id" id="conversation-id">
+                  a13acb4546</span
+                >
+              </h5>
+            </div>
+            <div class="conversation-box">
+              <div class="dialog">
+                <div class="ejada">
+                  <span class="dialog-logo"
+                    ><img src="./icons/logo-mini.svg"
+                  /></span>
+                  <span class="text">
+                    Card to know information about how to apply.
+                  </span>
+                </div>
+                <div class="ejada">
+                  <span class="text">Did that help?</span>
+                </div>
+                <div class="customer blue">
+                  <span class="text">Yes, Thank you.</span>
+                </div>
+                <div class="ejada"><span class="text">Glad to help.</span></div>
+              </div>
+
+              <div class="conversation-messege-box">
+                <input
+                  type="text"
+                  class="conversation-input"
+                  placeholder="Type your message..."
+                />
+                <div class="messege-icons">
+                  <div class="messege-icon">
+                    <i class="mic-icon" data-feather="mic"></i>
+                  </div>
+                  <div class="messege-icon">
+                    <i class="send-icon" data-feather="send"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       <div class="side-bar" id="sidebar">
         <ul class="side-list">
           <li class="side-item">

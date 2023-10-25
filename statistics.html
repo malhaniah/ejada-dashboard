@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/statistics.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link
       rel="stylesheet"
@@ -57,7 +58,58 @@
           </div>
         </div>
       </nav>
-      <main></main>
+      <main>
+        <div class="statistics-container">
+          <h4>Statistics</h4>
+          <div class="statistics-insights-container">
+            <div class="card kpi-card">
+              <div class="card-head">
+                <div class="title">KPI</div>
+              </div>
+              <div class="kpi-chart"></div>
+            </div>
+            <div class="card success-rate-card">
+              <div class="card-head">
+                <div class="title">Success Rate</div>
+              </div>
+              <div class="success-rate-chart"></div>
+            </div>
+            <div class="card average-conversation-card">
+              <div class="card-head">
+                <div class="title">Average number of conversation</div>
+                <div class="statistics-chart-nav"></div>
+              </div>
+              <div class="average-conversation-chart"></div>
+            </div>
+            <div class="card intent-card">
+              <div class="card-head">
+                <div class="title">Intent Chart</div>
+              </div>
+              <div class="intent-chart"></div>
+            </div>
+            <div class="card success-rate-intent-card">
+              <div class="card-head">
+                <div class="title">Success Rate Per Intent</div>
+                <div class="statistics-chart-nav"></div>
+              </div>
+              <div class="success-rate-intent-chart"></div>
+            </div>
+            <div class="card sentiment-card">
+              <div class="card-head">
+                <div class="title">Sentiment Analysis</div>
+              </div>
+              <div class="sentiment-chart"></div>
+            </div>
+            <div class="card sentiment-rate-intent-card">
+              <div class="card-head">
+                <div class="title">Sentiment Rate Per Intent</div>
+                <div class="statistics-chart-nav"></div>
+              </div>
+              <div class="sentiment-rate-intent-chart"></div>
+            </div>
+          </div>
+        </div>
+      </main>
       <div class="side-bar" id="sidebar">
         <ul class="side-list">
           <li class="side-item">

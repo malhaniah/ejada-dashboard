@@ -1,0 +1,55 @@
+:root {
+  --main-color: #fff;
+  --secondary-color: #f3f7ff;
+  --accent-color: #153d8a;
+  --light-accent-color: #d3dbe9;
+  --text-color: #7c7c8d;
+  --accent-text-color: #6482bf;
+  --white-filter: brightness(0) invert(1);
+  --borders-color: #e0e2e7;
+}
+
+.statistics-insights-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.statistics-container h4 {
+  color: var(--accent-text-color);
+  font-size: 26px;
+}
+
+.statistics-insights-container .card {
+  width: 500px;
+  height: 400px;
+  display: block;
+  /* background-color: blue; */
+}
+.statistics-insights-container .card .card-head {
+  /* height: 40px; */
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.side-bar {
+  height: 100%;
+}
+
+.statistics-insights-container .average-conversation-card {
+  grid-column: 1 / span 2;
+  width: 1020px;
+}
+
+.statistics-chart-nav {
+  width: 180px;
+  height: 25px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
