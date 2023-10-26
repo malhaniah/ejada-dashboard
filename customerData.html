@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer data</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles//customer-data.css" />
-    <link rel="stylesheet" href="./styles/control-center.css" />
+    <link rel="stylesheet" href="./styles/dark-mode-style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link
       rel="stylesheet"
@@ -37,7 +36,8 @@
           </div>
           <div class="info">
             <div class="icon-container">
-              <i data-feather="sun" class="icon"></i>
+              <i data-feather="sun" class="icon" id="light-mode"></i>
+              <i data-feather="moon" class="icon" id="dark-mode"></i>
             </div>
             <div class="icon-container">
               <i data-feather="rotate-ccw" class="icon"></i>
@@ -234,9 +234,27 @@
         </ul>
       </div>
     </div>
-    <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
     <script>
       feather.replace();
+      let activeClass = "active";
+      let username = "Ahmed Mohammed";
+
+      // Dark mode implementation
+      const body = document.body;
+      const lightModeButton = [...document.querySelectorAll("#light-mode")];
+      const darkModeButton = [...document.querySelectorAll("#dark-mode")];
+
+      lightModeButton.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          body.classList.add(activeClass);
+        });
+      });
+
+      darkModeButton.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          body.classList.remove(activeClass);
+        });
+      });
     </script>
   </body>
 </html>

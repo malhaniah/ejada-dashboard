@@ -1,0 +1,228 @@
+:root {
+  --dark-mode-background-color: #101011;
+  --secondary-dark-mode-background-color: #212122;
+  --third-dark-mode-background-color: rgba(223, 223, 223, 0.06);
+  --forth-dark-mode-background-color: #2e2e2f;
+  --dark-mode-main-text-color: #ffffff;
+  --dark-mode-secondary-text-color: #828282;
+  --dark-mode-third-text-color: #4777d3;
+  --dark-mode-alternative-text-color: #1e9581;
+  --dark-mode-main-borders-color: #2c2c2c;
+
+  /* SVG's filters */
+  --dark-mode-blue-400: brightness(0) saturate(100%) invert(49%) sepia(24%)
+    saturate(1563%) hue-rotate(182deg) brightness(87%) contrast(88%);
+}
+
+body.active {
+  background-color: var(--dark-mode-background-color);
+}
+
+body.active .nav-bar {
+  background-color: var(--secondary-dark-mode-background-color);
+  color: var(--text-color);
+}
+
+body.active .nav-bar .info {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+body.active .nav-bar .profile {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+body.active .nav-bar .profile .profile-picture .icon {
+  color: var(--accent-color);
+}
+
+body.active .nav-bar .profile .profile-info .username {
+  color: var(--dark-mode-main-text-color);
+}
+
+body.active .search-bar-container {
+  background-color: var(--dark-mode-background-color);
+}
+
+body.active .search-bar {
+  color: var(--dark-mode-main-text-color);
+}
+
+body.active .side-bar {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .tabs {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .tabs .tabs-list .tabs-item:hover,
+body.active .tabs .tabs-list .tabs-item.active {
+  background-color: var(--dark-mode-third-text-color);
+}
+
+body.active .tabs .tabs-list .tabs-item:hover .tabs-link,
+body.active .tabs .tabs-list .tabs-item.active .tabs-link {
+  color: var(--dark-mode-main-text-color);
+}
+
+body.active .card {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .card .data-container .data-type {
+  color: var(--dark-mode-secondary-text-color);
+}
+
+body.active .card .data-container .data {
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .card .data-container .goal {
+  color: var(--dark-mode-alternative-text-color);
+}
+
+body.active .filter-container {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .filter-select {
+  background-color: var(--third-dark-mode-background-color);
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .filter-select option {
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .stats-card {
+  background-color: var(--secondary-dark-mode-background-color) !important;
+}
+
+body.active .card-head {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+/* Chat box */
+body.active .chat-boxes-container .chat-box {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .play-options .option .icon {
+  color: var(--dark-mode-main-text-color);
+}
+
+body.active .chat-boxes-container .chat-box .chat-content {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+/* Conversation */
+body.active .conversation-container {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .conversation-container .conversation-box {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+body.active .conversation-container .conversation-message {
+  background-color: var(--dark-mode-background-color);
+}
+
+body.active .conversation-container .conversation-options select {
+  background-color: var(--forth-dark-mode-background-color);
+  border-color: var(--dark-mode-main-borders-color);
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .conversation-container .conversation-message .conversation-input {
+  background-color: var(--secondary-dark-mode-background-color);
+  color: var(--dark-mode-secondary-text-color);
+}
+
+body.active .conversation-analysis {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+.conversation-selection .selection-btn.active{
+    background-color: var(--dark-mode-third-text-color);
+    color: var(--dark-mode-main-text-color);
+}
+
+body.active .conversation-analysis .conversation-head,
+body.active .conversation-analysis .conversation-selection,
+body.active .conversation-analysis .analysis-feedback .feedback-list .feedback,
+body.active
+  .conversation-analysis
+  .analysis-feedback
+  .feedback-list
+  .feedback-content {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+.feedback-info .classification {
+  background-color: var(--third-dark-mode-background-color);
+}
+
+/* Customer data */
+body.active .table-container {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .data-search-bar-container {
+  border-color: var(--dark-mode-main-borders-color);
+  background-color: var(--forth-dark-mode-background-color);
+}
+
+body.active .data-show-select-container select {
+  background-color: var(--forth-dark-mode-background-color);
+  border-color: var(--dark-mode-main-borders-color);
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .data-search-bar-container input {
+  background-color: var(--forth-dark-mode-background-color);
+}
+
+body.active table.data-table {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+body.active .data-table tbody tr.headers {
+  background-color: var(--forth-dark-mode-background-color);
+}
+
+body.active .data-table tbody tr.headers th {
+  color: var(--dark-mode-third-text-color);
+}
+
+body.active .data-table tr.filters input {
+  background-color: var(--forth-dark-mode-background-color);
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+body.active .data-table tbody tr.filters td,
+body.active .data-table tbody tr.data td {
+  border-color: var(--dark-mode-main-borders-color);
+}
+
+.data-sentiment.blue .data.blue {
+  color: var(--dark-mode-third-text-color);
+}
+
+/* General styling */
+
+body.active .dialog {
+  background-color: var(--dark-mode-background-color);
+}
+
+body.active .dialog .ejada .text,
+body.active .dialog .ejada div .play-button {
+  background-color: var(--secondary-dark-mode-background-color);
+}
+
+body.active .dialog .customer.blue div .text {
+  color: var(--dark-mode-third-text-color);
+}
+body.active .dialog .customer.blue div .icon {
+  filter: var(--dark-mode-blue-400);
+}
