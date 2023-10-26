@@ -51,6 +51,7 @@ body {
 }
 
 /* Light & Dark Configuration */
+
 body #light-mode {
   display: block;
 }
@@ -790,6 +791,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* View Conversation */
+
 .conversations {
   width: 100%;
   display: none;
@@ -867,7 +869,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .conversation-input {
   width: 85%;
-  height: 60px;
+  /* height: 60px; */
   background: var(--secondary-color);
   border-radius: 25px;
   outline: none;
@@ -932,6 +934,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* conversation analysis */
+
 .conversation-analysis {
   width: 400px;
   padding: 10px 25px;
@@ -1189,6 +1192,7 @@ input[type="search"]::-webkit-search-results-decoration {
     "intent rate-intent"
     "sentiment sentiment-rate";
 }
+
 .statistics-container h4 {
   color: var(--accent-text-color);
   font-size: 26px;
@@ -1200,6 +1204,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: block;
   /* background-color: blue; */
 }
+
 .statistics-insights-container .card .card-head {
   /* height: 40px; */
   padding: 0;
@@ -1221,6 +1226,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
 }
+
 .card-head {
   display: flex;
   justify-content: space-between;
