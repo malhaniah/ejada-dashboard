@@ -27,8 +27,8 @@
   position: relative;
   justify-content: space-evenly;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "conversation conversation-analysis";
+  grid-template-columns: auto;
+  grid-template-areas: "conversation ";
 }
 
 .conversation-container {
@@ -58,6 +58,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.conversation-id:focus {
+  outline: none;
 }
 .conversation-id {
   color: #153d8a;
@@ -95,7 +98,7 @@
   outline: none;
 
   caret-color: #153d8a;
-
+  background: none;
   color: var(--customer-dialog-blue-text-color);
 }
 .messege-icons {
