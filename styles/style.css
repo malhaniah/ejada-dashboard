@@ -1434,3 +1434,27 @@ tr.data td:nth-child(4) {
     width: 750px;
   }
 }
+
+
+/* Animations */
+main {
+  animation-name: fadeUp;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
