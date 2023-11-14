@@ -1,0 +1,124 @@
+:root {
+  --primary-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.08);
+}
+
+main{
+    flex-flow: row wrap;
+    padding: 25px;
+}
+
+.ticket-container {
+  width: 400px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+  box-sizing: var(--primary-shadow);
+}
+
+.ticket-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-heading .ticket-number {
+  color: #1a73e8;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+}
+
+.ticket-heading .ticket-time {
+  color: #a9a9a9;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+}
+
+.ticket-topic {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px 0;
+}
+
+.ticket-topic-title {
+  color: #5b5a5a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+.ticket-content {
+  color: #9e9c9c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+  padding: 25px 0;
+}
+
+.ticket-regards span:nth-child(1) {
+  color: #153d8a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+.ticket-regards span:last-of-type{
+  color: #686e7a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.2px;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+.positive {
+  border-radius: var(--8, 8px);
+  background: rgba(24, 171, 86, 0.18);
+  color: #18ab56;
+}
+
+.negative {
+}
+
+.natural {
+}
